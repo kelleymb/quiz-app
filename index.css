@@ -16,7 +16,7 @@ ul {
     list-style: none;
 }
 
-legend, fieldset{
+form {
     text-align: center;
 }
 
@@ -27,6 +27,10 @@ fieldset {
     padding: 40px 25px 40px 25px; 
 }
 
-#startButton {
+#startButton, #restartButton {
     font-size: 15px;
+}
+
+.restartContainer {
+    text-align: center;
 }

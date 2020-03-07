@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Greek Mythology Quiz App">
+    <meta name="description" content=" Greek Mythology Quiz App">
     <link href="index.css" rel="stylesheet" type="text/css" />
     <title>Greek Mythology Quiz App</title>
 </head>
@@ -15,21 +15,39 @@
         </section>
         <section class="questionRecord">
             <ul>
-                <li class="questionInfo">Question:<span class="questionNumber">0&nbsp;</span>out of 10</li>
+                <li class="questionInfo">Question:<span class="questionNumber">1&nbsp;</span>out of 10</li>
                 <li class="questionInfo">&nbsp;Score:<span class="quizScore">0&nbsp;</span>out of 10</li>
             </ul>
         </section>
     </header>
     <main role="main" class="mainContainer">
-        <form class="quizBox">
+        <!--<form class="quizBox">
             <fieldset>
                 <legend>Greek Mythology</legend>
                     <p class="legendDescription">This quiz tests your knowledge of the twelve main Olympians in ancient Greek mythology. Good luck! </p>
                 <button type="button" id="startButton">Let's Begin!</button>
             </fieldset>
-        </form>
-        <section class="questionContainer"></section>
-        <section class="responseContainer"></section>
+        </form> -->
+        <section class="questionContainer">
+            <form class="quizQuestions">
+                <fieldset>
+                    <legend><span>Who is the king of all gods (and father to many)?</span></legend>
+                    <input type="radio" name="choices" value=""/>
+                    <label for="optionOne">Aphrodite</label>
+                    <input type="radio" name="choices" value=""/>
+                    <label for="optionTwo">Ares</label>
+                    <input type="radio" name="choices" value=""/>
+                    <label for="optionThree">Poseidon</label>
+                    <input type="radio" name="choices" value=""/>
+                    <label for="optionFour">Zeus</label>
+                    <button type="submit" class="submit" id="submitButton">Submit</button>
+                </fieldset>
+                <section class="responseContainer">
+                    <h3>Incorrect! The correct answer is Zeus!</h3>
+                    <button type="button" class="next" id="nextButton">Next Question</button>
+                </section>
+            </form>
+        </section> 
         <section class="restartContainer"></section>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
